@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <img src="" alt="logo site">
+            <button>novo</button>
+        </header>
+        <section>
+            <div class="entrada item">
+                <div class="item-box">
+                    <h3>Entrada</h3>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+               <h2>R$ 3.000,00</h2>
+            </div>
+            <div class="saida item">
+                <div class="item-box">
+                    <h3>Saida</h3>
+                    icone
+                </div>
+                <h2>R$ 1.000,00</h2>
+            </div>
+            <div class="total item">
+                <div class="item-box">
+                    <h3>Total</h3>
+                    icone
+                </div>
+                <h2>R$ 1.999,99</h2>
+            </div>
+        </section>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 100vh;  
+position: relative; 
+            }
+            header{
+                display: flex;
+
+                align-items: center;
+                justify-content: space-between;
+
+                padding-left: 50px;
+                padding-right: 50px;
+                background-color: black;
+                height: 25%;
+            }
+            img{
+                background-color: blue;
+            }
+            button{
+                border-radius: 8px;
+                border: none;
+                padding: 15px;
+                background-color: blue;
+            }
+            section{
+                flex-direction: row;
+                display: flex;
+                justify-content: space-around;
+                height: 150px;
+                top: 110px;
+                left: 40px;
+
+                position: absolute;
+
+            }
+           
+            .entrada, .saida{
+                background-color: darkgray;
+
+            }
+            .total{
+                background-color: green;
+            }
+            .item{
+                padding: 15px;
+                
+                display: flex;
+
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+
+                margin: 20px;
+
+                width: 330px;
+                height: 130px;
+                border-radius: 10px;
+            }
+            .item-box{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+        </style>
+</body>
+</html>
